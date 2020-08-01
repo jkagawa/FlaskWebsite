@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block title %}Random Art{% endblock %}
+{% block content %}
+
+    <div id="container">
+    
+    <header>
+            <ul>
+            	<li><a href="/" class="navbutton">Home</a></li>
+            	<li><a href="/art" class="navbutton art currentpage_nav">Random Art</a></li>
+            </ul>
+            <div class="dropdown_container">
+                <div class="dropdown">
+                    <button class="dropbtn">Random Art</button>
+                    <div class="dropdown-content">
+                      <a href="/">Home</a>
+                      <a href="/art" class="currentpage_nav">Random Art</a>
+                    </div>
+                </div> 
+            </div>
+        </header>
+    
+    <div id="mid">
+        
+    <div style="font-size: 18px; padding: 0px 10px 10px 10px;">GIF image using Adobe Illustrator</div>
+    <img src="static/images/image_grass_and_sky.gif" style="max-width: 95%;">
+    
+    <div style="font-size: 18px; padding: 50px 10px 10px 10px;">Mock logo design</div>
+    <img src="static/images/image_ff_logo_2.2.bmp" width="500px" style="max-width: 100%;">
+    
+        <div style="font-size: 18px; padding: 50px 10px 10px 10px;"><i>Imagination Made Real</i><br>Pencil drawing, digitally colored</div>
+    <img src="static/images/image_artwork_with_blur.jpg" width="500px" style="max-width: 100%;">
+    
+    <div style="font-size: 18px; padding: 50px 10px 10px 10px;">Graphic using Adobe Photoshop</div>
+    <img src="static/images/image_make.jpg" style="max-width: 100%;">
+    
+    <div style="font-size: 18px; padding: 50px 10px 10px 10px;">Another graphic using Adobe Photoshop</div>
+    <img src="static/images/image_believe.jpg" style="max-width: 100%;">
+    
+    <div style="font-size: 18px; padding: 50px 10px 10px 10px;">Graphic using Microsoft Paint</div>
+    <img src="static/images/image_all_in.png" style="max-width: 100%;">
+    </div>
+        
+        <div id="bottom" class="border"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+{% endblock %}

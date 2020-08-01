@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+    <div id="container">
+        <header>
+                <ul>
+                    <li><a href="/" class="navbutton currentpage_nav">Home</a></li>
+                    <li><a href="/art" class="navbutton art">Random Art</a></li>
+                </ul>
+                <div class="dropdown_container">
+                    <div class="dropdown">
+                        <button class="dropbtn">Home</button>
+                        <div class="dropdown-content">
+                          <a href="/" class="currentpage_nav">Home</a>
+                          <a href="/art">Random Art</a>
+                        </div>
+                    </div> 
+                </div>
+            </header>
+
+        <div id="mid">
+            Welcome to my site. Feel free to look around.<br><br><img src="static/images/image_welcome.jpg" style="max-width: 95%;">
+        </div>
+        <div id="bottom" class="border"></div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+{% endblock %}

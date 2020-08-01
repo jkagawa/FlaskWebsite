@@ -1,0 +1,239 @@
+body {
+	background-color: #F5F3F4;
+    margin: 0px;
+}
+
+#container {
+	width: auto;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	text-align: center;
+	position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #F5F3F4;
+}
+
+header h1 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.navbutton {
+    padding: 10px 20px 10px 20px; 
+    display: inline-block; 
+    margin: 6px 3px;
+    font-weight: normal;
+}
+
+.navbutton:hover {
+	background: #0099CC;
+	position: relative;
+}
+
+.currentpage_nav, .currentpage_nav:hover {
+	background: #551A8B !important;
+    color: #FFFFFF !important;
+}
+
+.dropdown_menu {
+    padding: 5px;
+	display: block;
+	width: 200px;
+	text-indent: 15px;
+	background-color: #0099CC;
+	font-weight: normal;
+	font-size: 80%;
+	text-align: left;
+}
+
+.dropdown_menu:hover {
+    background-color: #005555;
+}
+
+ul {
+	list-style-type: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.dropdown_div {
+    background-color: black;
+}
+
+.dropdown {
+    margin: 6px;
+    cursor: pointer;
+    background: #EAEDED;
+    float: right;
+}
+
+.dropbtn {
+    cursor: pointer;
+    padding: 10px;
+    background: #551A8B;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+header select {
+    padding: 10px 20px 10px 20px;
+    margin: 6px 3px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+ul li {
+	display: inline;
+}
+
+ul li ul {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	list-style-type: none;
+}
+
+ul li:hover ul {
+	left: 0px;
+	top: 40px;
+	padding: 0px;
+}
+
+#mid {
+	background-color: #eaeded;
+	margin-top: 50px;
+	padding: 20px 20px 100px 20px;
+	text-align: center;
+	font-size: 16px;
+}
+
+#bottom {
+	height: 40px;
+	background-color: #c0caca;
+}
+
+#height_error {
+	color: red;
+}
+
+#weight_error {
+	color: red;	
+}
+
+.dropdown_div {
+  display: none;
+}
+
+.dropdown_container {
+    float: left;
+    overflow: hidden;
+    background-color: black;
+    list-style-type: none;
+	background: black;
+	color: black;
+	font-weight: bold;
+	margin: 0px;
+	width: 100%;
+	height: 50px;
+	display: none;
+}
+.dropdown .dropbtn, .dropdown-content, .dropdown_container, .dropbtn {
+    border: none;
+    outline: none;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background: #EAEDED;
+    width: 100%;
+    float: right;
+    top: 50px;
+    right: 0;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+.dropdown-content a:hover {
+  background: #0099CC;
+  color: #FFFFFF;
+}
+.dropbtn:focus + .dropdown-content, .dropdown-content:hover {
+    display: block;
+}
+.dropdown:hover {
+  background: #555 !important;
+  color: white;
+}
+@media (max-width: 768px) {
+    header ul { display: none; }
+    .dropdown_div { display: block; }
+    .dropdown_container { display: block; }
+    #mid { padding: 20px 10px 100px 10px; }
+}
+@media (max-width: 768px) {
+  
+}
+ 
+
+
+
+/*============================BMI CSS==============================*/
+input[type="Text"], input[type="number"] {
+            padding: 8px 5px;
+            font-size: 16px;
+            margin: 5px;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #CCCCCC;
+            outline: none;
+        }
+        .calculate_btn {
+            font-size: 20px;
+            background: #551A8B;
+            color: #FFFFFF;
+            border-radius: 8px;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            outline: none;
+        }
+        .calculate_btn:hover {
+            background: #7647a2;
+        }
+        input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+            
+        }
+        .table_style {
+            border-collapse: collapse;
+            margin: 10px auto;
+        }
+        .cell_style {
+            padding: 5px 15px;
+            border: 1px solid #CCCCCC;
+        }
+        .cell_style_2 {
+            text-align: center;
+        }
+
+/*=================================================================*/
+
