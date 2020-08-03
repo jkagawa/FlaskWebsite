@@ -1,6 +1,8 @@
 body {
-	background-color: #F5F3F4;
+/*	background-color: #F5F3F4;*/
+    background-color: black;
     margin: 0px;
+    color: white;
 }
 
 #container {
@@ -35,14 +37,17 @@ a {
 }
 
 .navbutton:hover {
-	background: #0099CC;
-	position: relative;
+    font-weight: bold;
+/*	background: #0099CC;*/
+/*	position: relative;*/
 }
 
+/*
 .currentpage_nav, .currentpage_nav:hover {
 	background: #551A8B !important;
     color: #FFFFFF !important;
 }
+*/
 
 .dropdown_menu {
     padding: 5px;
@@ -55,9 +60,11 @@ a {
 	text-align: left;
 }
 
+/*
 .dropdown_menu:hover {
     background-color: #005555;
 }
+*/
 
 ul {
 	list-style-type: none;
@@ -80,8 +87,8 @@ ul {
 
 .dropbtn {
     cursor: pointer;
-    padding: 10px;
-    background: #551A8B;
+    padding: 5px 5px 0px;
+    background: white;
     color: #FFFFFF;
     font-size: 16px;
 }
@@ -112,7 +119,7 @@ ul li:hover ul {
 }
 
 #mid {
-	background-color: #eaeded;
+/*	background-color: #eaeded;*/
 	margin-top: 50px;
 	padding: 20px 20px 100px 20px;
 	text-align: center;
@@ -133,21 +140,19 @@ ul li:hover ul {
 }
 
 .dropdown_div {
-  display: none;
+/*  display: none;*/
 }
 
 .dropdown_container {
     float: left;
     overflow: hidden;
-    background-color: black;
     list-style-type: none;
-	background: black;
+	background: white;
 	color: black;
-	font-weight: bold;
 	margin: 0px;
 	width: 100%;
 	height: 50px;
-	display: none;
+/*	display: none;*/
 }
 .dropdown .dropbtn, .dropdown-content, .dropdown_container, .dropbtn {
     border: none;
@@ -159,8 +164,8 @@ ul li:hover ul {
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    background: #EAEDED;
-    width: 100%;
+    background: #3f3f3f;
+    width: 25%;
     float: right;
     top: 50px;
     right: 0;
@@ -169,71 +174,50 @@ ul li:hover ul {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  color: black;
+  color: white;
 }
 .dropdown-content a:hover {
-  background: #0099CC;
+    font-weight: bold;
+/*  background: #0099CC;*/
   color: #FFFFFF;
 }
-.dropbtn:focus + .dropdown-content, .dropdown-content:hover {
-    display: block;
+.dropbtn:hover {
+    background: #dbdbdb;
 }
+/*
 .dropdown:hover {
   background: #555 !important;
   color: white;
 }
+*/
+.show {
+    display: block;
+}
+
+.menu_icon {
+    width: 28px;
+    height: auto;
+}
+.img_style {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 @media (max-width: 768px) {
     header ul { display: none; }
     .dropdown_div { display: block; }
-    .dropdown_container { display: block; }
+    .dropdown_container {
+        display: block;
+    }
+    .dropdown-content {
+        width: 90%;
+    }
     #mid { padding: 20px 10px 100px 10px; }
 }
-@media (max-width: 768px) {
-  
-}
- 
+header ul { display: none; }
 
-
-
-/*============================BMI CSS==============================*/
-input[type="Text"], input[type="number"] {
-            padding: 8px 5px;
-            font-size: 16px;
-            margin: 5px;
-            text-align: center;
-            border-radius: 6px;
-            border: 1px solid #CCCCCC;
-            outline: none;
-        }
-        .calculate_btn {
-            font-size: 20px;
-            background: #551A8B;
-            color: #FFFFFF;
-            border-radius: 8px;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            outline: none;
-        }
-        .calculate_btn:hover {
-            background: #7647a2;
-        }
-        input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
-            -webkit-appearance: none; 
-            margin: 0; 
-            
-        }
-        .table_style {
-            border-collapse: collapse;
-            margin: 10px auto;
-        }
-        .cell_style {
-            padding: 5px 15px;
-            border: 1px solid #CCCCCC;
-        }
-        .cell_style_2 {
-            text-align: center;
-        }
-
-/*=================================================================*/
 

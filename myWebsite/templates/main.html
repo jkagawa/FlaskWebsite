@@ -12,7 +12,38 @@
 
 <body>
     
-    {% block content %}{% endblock %}
+    <div id="container">
+        <header>
+                <ul>
+                    <li><a href="/" class="navbutton currentpage_nav">Home</a></li>
+                    <li><a href="/art" class="navbutton art">Random Art</a></li>
+                </ul>
+                <div class="dropdown_container">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="toggleMenu()"><img src="static/images/menu-icon.png" class="menu_icon img_style"></button>
+                        <div id="main_dropdown" class="dropdown-content">
+                          <a href="/" class="currentpage_nav">Home</a>
+                          <a href="/art">Random Art</a>
+                        </div>
+                    </div> 
+                </div>
+            </header>
+
+        {% block content %}{% endblock %}
+        
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("main_dropdown").classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.menu_icon')) {
+                document.getElementById("main_dropdown").classList.remove('show');
+            }
+        }
+    </script>
     
 </body>
 
