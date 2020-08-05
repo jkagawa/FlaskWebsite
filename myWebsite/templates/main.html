@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{% endblock %}</title>
-
+    <link rel="icon" type="image/png" href="static/images/letter-j.png">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,20 +11,25 @@
 </head>
 
 <body>
-    
+    <div id="main_dropdown" class="dropdown-content" style="top: 0; position: fixed;">
+        <div class="dropdown-content-head">
+            <div onclick="toggleMenu()" class="closebtn"><img src="static/images/menu-icon.png" class="close_icon img_style"></div>
+        </div>
+        <a href="/" class="currentpage_nav">Home</a>
+        <a href="/art">Random Art</a>
+    </div>
     <div id="container">
         <header>
-                <ul>
-                    <li><a href="/" class="navbutton currentpage_nav">Home</a></li>
-                    <li><a href="/art" class="navbutton art">Random Art</a></li>
-                </ul>
                 <div class="dropdown_container">
+                    <div class="logo_style img_style"><img src="static/images/letter-j.png" width="37px"></div>
                     <div class="dropdown">
                         <button class="dropbtn" onclick="toggleMenu()"><img src="static/images/menu-icon.png" class="menu_icon img_style"></button>
+<!--
                         <div id="main_dropdown" class="dropdown-content">
                           <a href="/" class="currentpage_nav">Home</a>
                           <a href="/art">Random Art</a>
                         </div>
+-->
                     </div> 
                 </div>
             </header>
@@ -37,10 +42,12 @@
     <script>
         function toggleMenu() {
             document.getElementById("main_dropdown").classList.toggle("show");
+            document.getElementById("container").classList.toggle("opacity_effect");
         }
         window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn') && !event.target.matches('.menu_icon')) {
+            if (!event.target.matches('.dropbtn') && !event.target.matches('.menu_icon') && !event.target.matches('.dropdown-content') && !event.target.matches('.dropdown-content-head') && !event.target.matches('.closebtn')) {
                 document.getElementById("main_dropdown").classList.remove('show');
+                document.getElementById("container").classList.remove("opacity_effect");
             }
         }
     </script>
