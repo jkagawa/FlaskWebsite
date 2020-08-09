@@ -180,7 +180,7 @@ ul li:hover ul {
 /*    top: 50px;*/
     right: 0;
     height: 100%;
-    transition: width 0.5s ease-in-out;
+    transition: width 0.3s ease-in-out;
     top: 0;
     position: fixed;
 }
@@ -244,14 +244,25 @@ ul li:hover ul {
     margin: 6px;
 }
 
+.grid-style {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-template-columns: auto auto auto;
+    max-width: 1280px;
+    margin: auto;
+}
+
 .grid-cell-style {
     font-size: 14px;
-    padding: 10px;
-    height: 250px;
+    width: 250px;
+    max-width: 100%;
+    margin: auto;
 }
 
 .grid-cell-style > img, .grid-cell-style > a > img {
-    width: 500px;
+/*    width: 500px;*/
+    height: 250px;
     max-width: 100%;
     object-fit: cover;
     max-height: 100%;
@@ -266,7 +277,20 @@ ul li:hover ul {
     .dropdown-content.show {
         width: 90%;
     }
-    #mid { padding: 20px 10px 100px 10px; }
+    #mid { 
+        padding: 20px 10px 100px 10px;
+    }
+    .grid-style {
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+        grid-template-columns: auto auto;
+    }
+    .grid-cell-style {
+        width: 200px;
+    }
+    .grid-cell-style > img, .grid-cell-style > a > img {
+        height: 200px;
+    }
 }
 header ul { display: none; }
 
