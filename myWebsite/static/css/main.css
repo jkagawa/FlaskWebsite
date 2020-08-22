@@ -168,6 +168,7 @@ ul li:hover ul {
     text-decoration: none;
     display: block;
     color: #CCCCCC;
+    font-size: 18px;
 }
 .dropdown-content a:hover {
     color: #FFFFFF;
