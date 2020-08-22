@@ -183,7 +183,7 @@ ul li:hover ul {
 }
 
 .dropdown-content.show {
-    width: 50%;
+    width: 25%;
 }
 
 .show .close_icon {
@@ -253,14 +253,6 @@ header ul {
     
 }
 
-@media (min-width: 769px) and (max-width: 1080px) {
-    .grid-style {
-        grid-column-gap: 1rem;
-        grid-row-gap: 2rem;
-        grid-template-columns: auto auto;
-    }
-}
-
 .contact-link {
     padding: 5px;
 }
@@ -268,6 +260,17 @@ header ul {
 .contact-link:hover {
     background: #FFFFFF;
     color: #000000;
+}
+
+@media (min-width: 769px) and (max-width: 1080px) {
+    .dropdown-content.show {
+        width: 50%;
+    }
+    .grid-style {
+        grid-column-gap: 1rem;
+        grid-row-gap: 2rem;
+        grid-template-columns: auto auto;
+    }
 }
 
 @media (max-width: 768px) {
