@@ -273,6 +273,13 @@ header ul {
     }
 }
 
+.header-title {
+    display: inline-block;
+    font-size: 22px;
+    position: relative;
+    top: 25%;
+}
+
 @media (max-width: 768px) {
     header ul { 
         display: none;

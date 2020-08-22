@@ -6,6 +6,10 @@ app.debug = True
 def index():
     return render_template('home.html')
 
+@app.route("/projects")
+def projects_page():
+    return render_template('projects.html')
+
 @app.route("/art")
 def art_page():
     return render_template('art.html')
