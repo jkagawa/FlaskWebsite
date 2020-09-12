@@ -1,7 +1,7 @@
 body {
-    background-color: black;
+    background-color: #e5e5e5;
     margin: 0px;
-    color: white;
+    color: #191919;
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
 }
@@ -31,7 +31,7 @@ header h1 {
 
 .intro_style {
     font-size: 40px;
-    margin: 50px auto 0;
+    margin: 50px auto 50px;
     padding: 0 25px;
     max-width: 720px;
 }
@@ -42,7 +42,7 @@ header h1 {
 
 
 a {
-	color: white;
+	color: #191919;
 	text-decoration: none;
 }
 
@@ -127,7 +127,7 @@ ul li:hover ul {
 	margin-top: 50px;
 	padding: 20px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 #bottom {
@@ -250,7 +250,7 @@ ul li:hover ul {
     justify-content: center;
     font-size: 22px;
     padding: 10px;
-    color: #a8a8a8;
+    color: #191919;
 }
 
 header ul { 
@@ -275,20 +275,20 @@ header ul {
 }
 
 .contact-link {
-    padding: 5px 2px;
+    padding: 2px 2px;
     text-decoration: underline;
 }
 
 .contact-link:hover {
-    background: #FFFFFF;
-    color: #000000;
+    background: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .project-group {
     max-width: 100%;
-    width: 1080px;
-    margin: 0 auto 40px;
-    border-bottom: 1px solid #FFFFFF;
+    width: 720px;
+    margin: 0 auto 60px;
 }
 
 .header-title {
@@ -300,10 +300,13 @@ header ul {
 }
 
 .project-title {
+    padding-bottom: 20px;
     max-width: 1080px;
     margin: auto;
     text-align: left;
     font-size: 30px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .project-title-desc {
@@ -325,6 +328,17 @@ header ul {
 
 .project-body-image {
     padding-bottom: 20px;
+}
+
+.badge {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #09009f;
+    color: #FFFFFF;
+    margin: 0 10px 20px;
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
