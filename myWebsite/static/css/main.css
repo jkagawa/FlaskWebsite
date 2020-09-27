@@ -32,7 +32,7 @@ header h1 {
 .intro_style {
     font-size: 40px;
     margin: 50px auto 50px;
-    padding: 0 25px;
+    padding: 0;
     max-width: 720px;
 }
 
@@ -339,6 +339,37 @@ header ul {
     margin: 0 10px 20px;
     font-size: 18px;
     vertical-align: middle;
+}
+
+.contact-form form label {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    display: block;
+}
+
+.contact-form form input[type=text], .contact-form form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.contact-form form textarea {
+    height: 170px;
+    resize: vertical;
+}
+
+.contact-form form input[type=submit] {
+    background-color: #09009f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; border-radius: 7px;
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
