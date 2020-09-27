@@ -77,48 +77,48 @@
 
         });
         
-        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-       formbutton("create", {
-           onResponse: function(ok, setStatus) {
-            if (ok) { setStatus("Your form has been submitted!"); }
-            else { setStatus("<span style='color:red'>Oops, there was an error!</span>"); }
-           },
-           action: "https://formspree.io/xzbkzzgg",
-           title: "Contact Me",
-           fields: [
-               { 
-                type: "text", 
-                label: "Name:", 
-                name: "name",
-                required: true,
-                placeholder: "Your name"
-              },
-              { 
-                type: "email", 
-                label: "Email Address:", 
-                name: "email",
-                required: true,
-                placeholder: "Your email address"
-              },
-              {
-                type: "textarea",
-                label: "Message:",
-                name: "message",
-                required: true,
-                placeholder: "Your message",
-              },
-              { type: "submit" }      
-           ],
-            styles: {
-              fontFamily: "Arial",
-              title: {
-                background: "#09009f",
-              },
-              button: {
-                background: "#09009f",
-              }
-            }
-       });
+//        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+//       formbutton("create", {
+//           onResponse: function(ok, setStatus) {
+//            if (ok) { setStatus("Your form has been submitted!"); }
+//            else { setStatus("<span style='color:red'>Oops, there was an error!</span>"); }
+//           },
+//           action: "https://formspree.io/xzbkzzgg",
+//           title: "Contact Me",
+//           fields: [
+//               { 
+//                type: "text", 
+//                label: "Name:", 
+//                name: "name",
+//                required: true,
+//                placeholder: "Your name"
+//              },
+//              { 
+//                type: "email", 
+//                label: "Email Address:", 
+//                name: "email",
+//                required: true,
+//                placeholder: "Your email address"
+//              },
+//              {
+//                type: "textarea",
+//                label: "Message:",
+//                name: "message",
+//                required: true,
+//                placeholder: "Your message",
+//              },
+//              { type: "submit" }      
+//           ],
+//            styles: {
+//              fontFamily: "Arial",
+//              title: {
+//                background: "#09009f",
+//              },
+//              button: {
+//                background: "#09009f",
+//              }
+//            }
+//       });
     </script>
     
 </body>
