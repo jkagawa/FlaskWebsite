@@ -348,7 +348,7 @@ header ul {
     display: block;
 }
 
-.contact-form form input[type=text], .contact-form form textarea {
+.contact-form form input[type=text], .contact-form form input[type=email], .contact-form form textarea {
     width: 100%;
     padding: 12px;
     margin-top: 5px;
