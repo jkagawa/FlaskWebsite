@@ -77,6 +77,12 @@
 
         });
         
+        $(document).ready(function() {
+            setTimeout( function(){
+                $('.div_profile_image').css('position','initial');
+                $('.div_profile_text').css('position','initial');
+            },1000);
+        });   
 //        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 //       formbutton("create", {
 //           onResponse: function(ok, setStatus) {
