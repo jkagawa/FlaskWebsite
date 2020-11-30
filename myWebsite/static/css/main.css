@@ -375,6 +375,7 @@ header ul {
 .img_profile {
     border-radius: 50%;
     width: 200px;
+    max-width: 200px;
 }
 
 .div_profile_image {
@@ -437,15 +438,15 @@ header ul {
         font-size: 18px;
     }
     .img_profile {
-        width: 150px;
+        width: 100%;
     }
     .div_profile_image {
-        margin: 10px;
-        width: 30%;
+        margin: 0;
+        width: 35%;
     }
     .div_profile_text { 
         font-size: 20px;
-        width: 50%;
+        width: 60%;
     }
     .intro_style {
         margin: 20px auto 20px;
