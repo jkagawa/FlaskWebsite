@@ -7,7 +7,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
+
         {% block gtag %}{% endblock %}
     </script>
 
@@ -24,26 +24,31 @@
         <div class="dropdown-content-head">
             <div onclick="toggleMenu()" class="closebtn"><img src="static/images/close-icon.png" class="close_icon img_style"></div>
         </div>
-        <div><a href="/" class="currentpage_nav">Home</a></div>
-        <div><a href="/projects">Coding Projects</a></div>
-        <div><a href="/art">Personal Artwork</a></div>
-        <div><a href="/contact">Contact Info</a></div>
+        <div><a href="/" class="currentpage_nav">Projects</a></div>
+        <div><a href="/art">Art Showcase</a></div>
+        <div><a href="/contact">Contact</a></div>
     </div>
     <div id="container">
         <header>
-                <div class="dropdown_container">
-                    <div class="logo_style"><img src="static/images/letter-j.png" width="37px" class="img_style"></div>
-                    <div class="header-title">{% block header_title %}{% endblock %}</div>
-                    <div class="dropdown">
-                        <button class="dropbtn" onclick="toggleMenu()"><img src="static/images/menu-icon.png" class="menu_icon img_style"></button>
-                    </div> 
-                </div>
-            </header>
+          <div class="header_container">
+            <div class="logo_style"><img src="static/images/letter-j.png" width="37px" class="img_style"></div>
+            <a href="/"><div class="nav-button{% if request.endpoint == 'index' %} button-main{% endif %}">Projects</div></a>
+            <a href="/art"><div class="nav-button{% if request.endpoint == 'art_page' %} button-main{% endif %}">Art Showcase</div></a>
+            <a href="/contact"><div class="nav-button{% if request.endpoint == 'contact_page' %} button-main{% endif %}">Contact</div></a>
+          </div>
+          <div class="dropdown_container">
+            <div class="logo_style"><img src="static/images/letter-j.png" width="37px" class="img_style"></div>
+            <div class="header-title">{% block header_title %}{% endblock %}</div>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="toggleMenu()"><img src="static/images/menu-icon.png" class="menu_icon img_style"></button>
+            </div>
+          </div>
+        </header>
 
         {% block content %}{% endblock %}
-        
+
     </div>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/js/jquery.magnific-popup.js"></script>
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
@@ -58,7 +63,7 @@
                 document.getElementById("container").classList.remove("opacity_effect");
             }
         }
-        
+
         $(document).ready(function() {
             $('.image-popup-no-margins').magnificPopup({
                 type: 'image',
@@ -76,13 +81,13 @@
             });
 
         });
-        
+
         $(document).ready(function() {
             setTimeout( function(){
                 $('.div_profile_image').css('position','initial');
                 $('.div_profile_text').css('position','initial');
             },1000);
-        });   
+        });
 //        window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 //       formbutton("create", {
 //           onResponse: function(ok, setStatus) {
@@ -92,16 +97,16 @@
 //           action: "https://formspree.io/xzbkzzgg",
 //           title: "Contact Me",
 //           fields: [
-//               { 
-//                type: "text", 
-//                label: "Name:", 
+//               {
+//                type: "text",
+//                label: "Name:",
 //                name: "name",
 //                required: true,
 //                placeholder: "Your name"
 //              },
-//              { 
-//                type: "email", 
-//                label: "Email Address:", 
+//              {
+//                type: "email",
+//                label: "Email Address:",
 //                name: "email",
 //                required: true,
 //                placeholder: "Your email address"
@@ -113,7 +118,7 @@
 //                required: true,
 //                placeholder: "Your message",
 //              },
-//              { type: "submit" }      
+//              { type: "submit" }
 //           ],
 //            styles: {
 //              fontFamily: "Arial",
@@ -126,7 +131,7 @@
 //            }
 //       });
     </script>
-    
+
 </body>
 
 </html>
