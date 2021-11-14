@@ -36,14 +36,48 @@ header h1 {
     max-width: 720px;
 }
 
-.non_intro_style {
-    margin: 10px auto 0;
+.non-intro-style {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+.non-intro-style-dark {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    align-items: center;
 }
 
-
-a {
+.link-style {
 	color: #191919;
 	text-decoration: none;
+  padding: 5px;
+  border: 1px solid #191919;
+  border-radius: 8px;
+}
+.link-style-white {
+	color: white;
+	text-decoration: none;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.link-style:hover {
+    background: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+}
+.link-style-white:hover {
+    background: white;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px;
 }
 
 .navbutton {
@@ -125,7 +159,8 @@ ul li:hover ul {
 
 #mid {
 	margin-top: 50px;
-	padding: 20px;
+  margin-bottom: 50px;
+	padding: 20px 0;
 	text-align: center;
 	font-size: 30px;
 }
@@ -150,7 +185,7 @@ ul li:hover ul {
 /*    background: linear-gradient(45deg, rgba(255,255,255,1) 40%, rgba(201,214,255,1) 60%, rgba(77,121,255,1) 85%, rgba(63,111,255,1) 100%);*/
     background: linear-gradient(45deg, #09009f, #00ff95 80%);
 	color: black;
-	margin: 0px;
+	margin: 0;
 	width: 100%;
 	height: 50px;
 }
@@ -244,7 +279,7 @@ ul li:hover ul {
 
 .grid-cell-text {
     justify-content: center;
-    font-size: 22px;
+    font-size: 1.2rem;
     padding: 10px;
     color: #191919;
 }
@@ -255,8 +290,8 @@ header ul, .dropdown_container, .dropdown_div {
 
 .grid-cell-style > img, .grid-cell-style > a > img {
     max-width: 100%;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     max-width: 100%;
     object-fit: cover;
     max-height: 100%;
@@ -270,21 +305,10 @@ header ul, .dropdown_container, .dropdown_div {
 
 }
 
-.contact-link {
-    padding: 2px 2px;
-    text-decoration: underline;
-}
-
-.contact-link:hover {
-    background: #000000;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
 .project-group {
     max-width: 100%;
     width: 720px;
-    margin: 0 auto 60px;
+    margin: 0 auto 0;
 }
 
 .header-title {
@@ -328,12 +352,11 @@ header ul, .dropdown_container, .dropdown_div {
 
 .badge {
     display: inline-block;
-    border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 15px;
     background: #09009f;
     color: #FFFFFF;
     margin: 0 10px 20px;
-    font-size: 18px;
+    font-size: 1rem;
     vertical-align: middle;
 }
 
@@ -390,10 +413,10 @@ header ul, .dropdown_container, .dropdown_div {
     display: inline-block;
     max-width: 470px;
     line-height: 1.0;
-    vertical-align: middle;.
-    font-size: 34px;
+    vertical-align: middle;
+    font-size: 1.8rem;
     position: relative;
-    animation: fromRight 1s;
+    animation: fromLeft 1s;
     animation-direction: normal;
 }
 
@@ -410,22 +433,16 @@ header ul, .dropdown_container, .dropdown_div {
     background: white;
     color: #191919;
     text-shadow: none;
+    border-bottom: none;
 }
 .button-main {
     border-bottom: 2px solid white;
 }
-.link-style:hover {
-    background: lightblue;
-    padding: 10px;
-    border-radius: 8px;
-}
 
-/* #github-icon {
-  display: inline-block;
-  background-image: url('static/images/github-icon.png');
-  background-repeat: no-repeat;
-  width: 50px;
-} */
+.page-row {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
 @media (min-width: 769px) and (max-width: 1080px) {
     .dropdown-content.show {
@@ -450,7 +467,11 @@ header ul, .dropdown_container, .dropdown_div {
         width: 75%;
     }
     #mid {
-        padding: 20px 10px 100px 10px;
+        padding: 20px 0 100px 0;
+    }
+    .page-row {
+      padding-right: 10px;
+      padding-left: 10px;
     }
     .grid-style {
         grid-template-columns: 1fr 2fr;
@@ -464,7 +485,7 @@ header ul, .dropdown_container, .dropdown_div {
     }
 
     .grid-cell-text {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
     .img_profile {
         width: 100%;
@@ -474,7 +495,7 @@ header ul, .dropdown_container, .dropdown_div {
         width: 35%;
     }
     .div_profile_text {
-        font-size: 20px;
+        font-size: 1.2rem;
         width: 60%;
     }
     .intro_style {
