@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link type="text/css" rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="https://dimsemenov.com/plugins/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
             <div onclick="toggleMenu()" class="closebtn"><img src="static/images/close-icon.png" class="close_icon img_style"></div>
         </div>
         <div><a href="/" class="currentpage_nav">Projects</a></div>
-        <div><a href="/art">Art</a></div>
+        <div style="display: none;"><a href="/art">Art</a></div>
         <div><a href="/contact">Contact</a></div>
     </div>
     <div id="container">
@@ -33,7 +34,7 @@
           <div class="header_container">
             <div class="logo_style"><img src="static/images/letter-j.png" width="37px" class="img_style"></div>
             <a href="/"><div class="nav-button{% if request.endpoint == 'index' %} button-main{% endif %}">Projects</div></a>
-            <a href="/art"><div class="nav-button{% if request.endpoint == 'art_page' %} button-main{% endif %}">Art</div></a>
+            <a href="/art" style="display: none;"><div class="nav-button{% if request.endpoint == 'art_page' %} button-main{% endif %}">Art</div></a>
             <a href="/contact"><div class="nav-button{% if request.endpoint == 'contact_page' %} button-main{% endif %}">Contact</div></a>
           </div>
           <div class="dropdown_container">
@@ -50,6 +51,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="static/js/script.js"></script>
     <script src="static/js/jquery.magnific-popup.js"></script>
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script type="text/javascript">
