@@ -15,18 +15,20 @@
                 <div class="slider round"></div>
               </label>
             </div>
-            <div class="intro_style page-row">
-                <div class="div_profile_image"><img src="static/images/profile-photo.jpeg" class="img_profile img_style"></div>
-                <div class="div_profile_text">
-                  Hello! My name is Joshua Kagawa. I'm a software developer.
-                  <div style="margin: 25px 0 50px;"><a href="https://github.com/jkagawa" target="_blank" class="link-style"><span>Visit my GitHub</span></a></div>
-                </div>
+            <div id="proj-intro" style="height: calc(100vh - 70px); display: flex; align-items: center; flex-flow: wrap; padding-top: 70px;">
+              <div class="intro_style page-row" style="width: 100%;">
+                  <div class="div_profile_image"><img src="static/images/profile-photo.jpeg" class="img_profile img_style"></div>
+                  <div class="div_profile_text">
+                    Hello! My name is Joshua Kagawa. I'm a software developer.
+                    <div style="margin: 25px 0 50px;"><a href="https://github.com/jkagawa" target="_blank" class="link-style"><span>Visit my GitHub</span></a></div>
+                  </div>
+              </div>
+              <div class="non-intro-style-dark page-row" style="padding-top: 25px; padding-bottom: 25px; width: 100%; align-self: end; border-bottom: 1px solid #000000;">
+                <div style="font-size: 2rem;">Projects <a href="#proj-climbing" class="jump-button"><i class="fas fa-chevron-down"></i></a></div>
+              </div>
             </div>
-            <div class="non-intro-style-dark page-row" style="padding-top: 25px; padding-bottom: 25px;">
-              <div style="font-size: 2rem;">Projects</div>
-            </div>
-            <div class="non-intro-style page-row">
-              <div class="project-group">
+            <div id="proj-climbing" class="non-intro-style-dark" style="height: calc(100vh - 70px); display: flex; align-items: center; flex-flow: wrap; padding-top: 70px; padding-bottom: 0px;">
+              <div class="project-group page-row">
                 <div class="project-title">Climbing Spot</div><div class="badge">Recent Project</div>
                 <div class="project-body-image"><img src="static/images/climbing-website-demo.gif" class="img_style" style="width: 1080px; max-width: 100%; object-fit: cover; height: 365px;"></div>
                 <div class="project-body">A website that enables the discovery of rock climbing locations and rock climbers, powered by a RESTful API</div>
@@ -34,15 +36,21 @@
     are locked through the use of sign-in and authentication functionality.</div>
                 <div class="project-body">Link to the <a href="https://climbing-spot-app.herokuapp.com" target="_blank" class="link-style">Climbing Spot website</a></div>
               </div>
+              <div class="non-intro-style page-row" style="padding-top: 25px; padding-bottom: 25px; width: 100%; align-self: end; border-bottom: 1px solid #000000;">
+                <div style="font-size: 2rem;">Projects <a href="#proj-intro" class="jump-button"><i class="fas fa-chevron-up"></i></a><a href="#proj-budget" class="jump-button"><i class="fas fa-chevron-down"></i></a></div>
+              </div>
             </div>
-          <div class="non-intro-style-dark page-row">
-            <div class="project-group">
+          <div id="proj-budget" class="non-intro-style" style="height: calc(100vh - 70px); display: flex; align-items: center; flex-flow: wrap; padding-top: 70px; padding-bottom: 0px;">
+            <div class="project-group page-row">
               <div class="project-title">My Budget</div>
               <div class="project-body-image"><img src="static/images/budget-app-demo.gif" class="img_style" style="width: 300px; max-width: 50%;"></div>
               <div class="project-body">A budgeting app that lets users keep track of how much they are spending in a clean and
     easy-to-use interface</div>
               <div class="project-body">Allows users to set a monthly budget and enter expenses.</div>
               <div class="project-body">Link to the <a href="https://play.google.com/store/apps/details?id=com.jkagawa.mybudget" target="_blank" class="link-style">My Budget Android app</a></div>
+            </div>
+            <div class="non-intro-style-dark page-row" style="padding-top: 25px; padding-bottom: 25px; width: 100%; align-self: end; border-bottom: 1px solid #000000;">
+              <div style="font-size: 2rem;">Projects <a href="#proj-climbing" class="jump-button"><i class="fas fa-chevron-up"></i></a></div>
             </div>
         </div>
     </div>
