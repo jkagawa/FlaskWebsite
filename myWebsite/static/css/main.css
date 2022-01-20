@@ -122,6 +122,11 @@ header h1 {
   color: var(--primary-color);
 }
 
+.jump-button:hover .fas {
+  font-size: 42px;
+  position: sticky;
+}
+
 .dropdown_menu {
   padding: 5px;
 	display: block;
