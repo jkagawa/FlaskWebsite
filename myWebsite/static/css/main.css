@@ -227,6 +227,10 @@ ul li:hover ul {
 	height: 50px;
   z-index: 50;
 }
+.container_style {
+  background: var(--background-alt);
+}
+
 .dropdown .dropbtn, .dropdown-content, .dropdown_container, .dropbtn, .header_container {
     border: none;
     outline: none;

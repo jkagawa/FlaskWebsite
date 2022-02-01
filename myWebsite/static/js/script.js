@@ -36,3 +36,22 @@ if(currTheme) {
     toggleLightDarkMode(true);
   }
 }
+
+
+window.onscroll = function(event) {
+  var doc_el = document.documentElement;
+  doc_el = (doc_el.clientHeight)? doc_el : document.body;
+  var target_el = document.querySelectorAll('.non-intro-style-dark');
+  var cont = document.querySelector('.header_container');
+  var cont2 = document.querySelector('.dropdown_container');
+
+  //Check if top of element hits bottom of fixed header
+  if (doc_el.scrollTop > (target_el[0].offsetTop-50)) {
+    cont.classList.add("container_style");
+    cont2.classList.add("container_style");
+  }
+  else {
+    cont.classList.remove("container_style");
+    cont2.classList.remove("container_style");
+  }
+};
